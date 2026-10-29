@@ -1,0 +1,193 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORDECAI.EXE // портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Оверлей для пасхалки (изначально скрыт) -->
+    <div id="rainbow-overlay" class="hidden"></div>
+    <div id="spin-mordecai" class="hidden">
+        <!-- ТУТ ИЗМЕНЕНО ИМЯ ФАЙЛА -->
+        <img src="mordeсai2.png" alt="Mordecai Party">
+    </div>
+
+    <div class="crt-monitor">
+        <div class="crt-screen">
+            <div class="scanlines"></div>
+            <div class="glow"></div>
+
+            <!-- верхняя панель ОС -->
+            <header class="os-bar">
+                <div class="os-logo"><span class="blink">_</span> MORDECAI.EXE</div>
+                <nav class="os-menu" id="osMenu">
+                    <a href="about.html">READ_ME.TXT</a>
+                </nav>
+                <div class="os-actions">
+                    <button id="themeToggle" title="Сменить тему">☀</button>
+                    <button id="menuToggle" class="burger" title="Меню">≡</button>
+                </div>
+            </header>
+
+            <!-- рабочий стол -->
+            <main class="desktop">
+                <aside class="icon-column">
+                    <button class="desktop-icon selected" data-target="about">
+                        <span class="icon">👤</span><span>О СЕБЕ</span>
+                    </button>
+                    <button class="desktop-icon" data-target="edu">
+                        <span class="icon">🎓</span><span>ОПЫТ</span>
+                    </button>
+                    <button class="desktop-icon" data-target="skills">
+                        <span class="icon">⚡</span><span>НАВЫКИ</span>
+                    </button>
+                    <button class="desktop-icon" data-target="projects">
+                        <span class="icon">📁</span><span>ДЕЛА</span>
+                    </button>
+                    <button class="desktop-icon" data-target="contacts">
+                        <span class="icon">✉</span><span>СВЯЗЬ</span>
+                    </button>
+                </aside>
+
+                <section class="window-area" id="windowArea">
+
+                    <!-- О СЕБЕ -->
+                    <article class="window active" id="win-about">
+                        <div class="window-titlebar">
+                            <span>О_СЕБЕ.TXT</span>
+                            <div class="win-btns"><span>_</span><span>□</span><span class="win-close">×</span></div>
+                        </div>
+                        <div class="window-body about-body">
+                            <div class="pixel-portrait">
+                                <div class="portrait-frame">
+                                    <img src="mordecai.png" alt="Мордекай" class="mordecai-avatar">
+                                </div>
+                            </div>
+                            <div class="about-text">
+                                <h1>МОРДЕКАЙ</h1>
+                                <p class="subtitle">&gt; голубая сойка // смотритель парка</p>
+                                <p class="tagline">«Это не моя работа.»</p>
+                                <p>23 года. Родился в Калифорнии. Работаю в парке, играю на гитаре, тусуюсь с Ригби и стараюсь не попадаться на глаза Бенсону.</p>
+                                <div class="status-bar-inline"><span class="status-dot"></span> В СЕТИ // СТАТУС: ЛЕНИВО</div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- ОПЫТ -->
+                    <article class="window" id="win-edu">
+                        <div class="window-titlebar">
+                            <span>ОПЫТ.LOG</span>
+                            <div class="win-btns"><span>_</span><span>□</span><span class="win-close">×</span></div>
+                        </div>
+                        <div class="window-body">
+                            <h2>&gt; ОБРАЗОВАНИЕ</h2>
+                            <ul class="timeline">
+                                <li><strong>Колледж</strong> — не закончил. Ригби подделал письмо об отказе.</li>
+                                <li><strong>Самообразование</strong> — гитара, видеоигры и искусство избегания уборки.</li>
+                            </ul>
+                            <h2>&gt; ОПЫТ РАБОТЫ</h2>
+                            <ul class="timeline">
+                                <li><strong>Смотритель парка</strong> — 5+ лет. Уборка территории (в теории), выживание в абсурдных ситуациях (на практике).</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- НАВЫКИ -->
+                    <article class="window" id="win-skills">
+                        <div class="window-titlebar">
+                            <span>НАВЫКИ.SYS</span>
+                            <div class="win-btns"><span>_</span><span>□</span><span class="win-close">×</span></div>
+                        </div>
+                        <div class="window-body">
+                            <h2>&gt; РЕАЛЬНЫЕ НАВЫКИ</h2>
+                            <div class="skill-item"><span>Игра на гитаре</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+                            <div class="skill-item"><span>Видеоигры (Ultimate Melee)</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+                            <div class="skill-item"><span>Избегание работы</span><div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+                            <div class="skill-item"><span>Терпение к Ригби</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
+                            <div class="skill-item"><span>Уборка территории</span><div class="skill-bar"><div class="skill-fill" style="width:5%"></div></div></div>
+                        </div>
+                    </article>
+
+                    <!-- ПРОЕКТЫ / ДЕЛА -->
+                    <article class="window" id="win-projects">
+                        <div class="window-titlebar">
+                            <span>ДЕЛА.DIR</span>
+                            <div class="win-btns"><span>_</span><span>□</span><span class="win-close">×</span></div>
+                        </div>
+                        <div class="window-body">
+                            <h2>&gt; ЭПИЗОДЫ И ДЕЛА</h2>
+                            <div class="filter-bar">
+                                <button class="filter-btn active" data-filter="all">ВСЕ</button>
+                                <button class="filter-btn" data-filter="park">ПАРК</button>
+                                <button class="filter-btn" data-filter="life">ЖИЗНЬ</button>
+                            </div>
+                            <div class="projects-grid" id="projectsGrid">
+                                <article class="project-card" data-cat="park">
+                                    <span class="project-badge">ПАРК</span>
+                                    <h4>Битва с Монстром</h4>
+                                    <p class="project-cat">Спасение парка</p>
+                                    <p>Одолел монстра из видеоигры, чтобы вернуть украденный кассетный плеер Ригби.</p>
+                                </article>
+                                <article class="project-card" data-cat="park">
+                                    <span class="project-badge">ПАРК</span>
+                                    <h4>Смена за Бенсона</h4>
+                                    <p class="project-cat">Управление</p>
+                                    <p>Пытался быть боссом, пока Бенсон был в отпуске. Чуть не сломал парк. Больше не хочу.</p>
+                                </article>
+                                <article class="project-card" data-cat="life">
+                                    <span class="project-badge">ЖИЗНЬ</span>
+                                    <h4>Сольный концерт</h4>
+                                    <p class="project-cat">Музыка</p>
+                                    <p>Выступил с авторской песней на сцене парка. Маргарет оценила.</p>
+                                </article>
+                                <article class="project-card" data-cat="life">
+                                    <span class="project-badge">ЖИЗНЬ</span>
+                                    <h4>Турнир по "Ultimate Melee"</h4>
+                                    <p class="project-cat">Гейминг</p>
+                                    <p>Дошёл до финала. Проиграл только из-за того, что Ригби отвлёк.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- КОНТАКТЫ -->
+                    <article class="window" id="win-contacts">
+                        <div class="window-titlebar">
+                            <span>СВЯЗЬ.URL</span>
+                            <div class="win-btns"><span>_</span><span>□</span><span class="win-close">×</span></div>
+                        </div>
+                        <div class="window-body">
+                            <h2>&gt; СВЯЗАТЬСЯ СО МНОЙ</h2>
+                            <ul class="contact-list">
+                                <li>📧 Учебная почта: <a href="mailto:mordecai.park@example.edu">mordecai.park@example.edu</a></li>
+                                <li>🔗 Ссылка на профиль: <a href="https://example.com/mordecai" target="_blank" rel="noopener">example.com/mordecai</a></li>
+                            </ul>
+                            <p class="note">Если я не отвечаю — значит, я на смене (или играю на гитаре).</p>
+                        </div>
+                    </article>
+
+                    <!-- заглушка, если все окна закрыты -->
+                    <div class="empty-desktop" id="emptyDesktop">
+                        <p>Выберите ярлык на рабочем столе.</p>
+                    </div>
+                </section>
+            </main>
+
+            <!-- подвал -->
+            <div class="site-footer">
+                <span>© 2026 MORDECAI // САЙТ РАБОТАЕТ НА ЭНЕРГИИ КОФЕ</span>
+            </div>
+
+            <footer class="status-bar">
+                <span id="clock">--:--</span>
+                <span>MORDECAI.EXE v1.0</span>
+                <span id="themeLabel">LIGHT</span>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
